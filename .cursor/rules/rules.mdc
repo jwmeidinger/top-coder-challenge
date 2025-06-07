@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# RULES
+- Using the conda env of `top-coder-challenge`
+- NEVER DELETE FILES or use the rm COMMAND. If you find a file distracting put `old_` on the front or `_v{version}`
+- THE GOAL IS TO MATCH THE BLACK BOX ALGO. DO NOT TRY TO IMPROVE IT.
+- Update progress in [Current_Cursor_thoughts.md](mdc:Current_Cursor_thoughts.md)
