@@ -4,13 +4,16 @@
 # This script should take three parameters and output the reimbursement amount
 # Usage: ./run.sh <trip_duration_days> <miles_traveled> <total_receipts_amount>
 
-# Convert solution.py to Unix line endings if needed
-if grep -q $'\r' solution.py; then
-  # Create a temporary file with Unix line endings
-  tr -d '\r' < solution.py > solution_unix.py
-  # Use the converted file
-  python solution_unix.py "$@"
-else
-  # Use the original file if already using Unix line endings
-  python solution.py "$@"
-fi 
+# Example implementations (choose one and modify):
+
+# Example 1: Python implementation
+# python3 calculate_reimbursement.py "$1" "$2" "$3"
+
+# Example 2: Node.js implementation
+# node calculate_reimbursement.js "$1" "$2" "$3"
+
+# Example 3: Direct bash calculation (for simple logic)
+# echo "scale=2; $1 * 100 + $2 * 0.5 + $3" | bc
+
+# TODO: Replace this with your actual implementation
+python3 solution.py "$1" "$2" "$3"
